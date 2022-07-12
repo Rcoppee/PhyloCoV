@@ -4,21 +4,17 @@
 <h3>1. Prerequisites</h3>
  <p>To use these scripts, you need the following programs:</p>
  <p>- TreeTime<br>
- - xxx<br>
- - xxx</p>
+ - R<br>
+ - R packages</p>
  <h3>Dataset generation (ANTOINE)</h3>
  <p>xxx</p>
- <p>xxx</p>
  <br>
- <h3>Dating the trees using TreeTime</h3>
+ <h3>Dating the phylogenetic trees using TreeTime</h3>
  <p> We used TreeTime to date each phylogenetic tree previously produced. TreeTime requires a phylogenetic tree (newick format), a multiple sequence alignment and text file that indicates the date of sample collection for each tip in the phylogeny. Prior to TreeTime, we developed a R script, named <i><b>get_dates_from_tips.R</b></i> that produces such a file (one output per replicate with the <i>name X_date.txt</i>, where <i>X</i> is the number of the replicate). Then, we produced a shell script, named <i><b>launch_treetime.sh</b></i> that allows to date all the trees in a dataset. For each replicate, one repository is created containing some files, including the dated trees named <i>X_tree_dated.nexus</i> where <i>X</i> is the number of the replicate. </p>
  <br>
- <h3>3. Generating a table of A, T, G, C and indels content</h3>
- <p>The second step allows to formate a table that indicate the number of A, T, G, C and indels for each position of the genome. For that, we developed a perl script, named extract_data_pileup.pl, that takes the previously produced pileup file as an input (option <code>-p</code>).</p>
-  <p><code> perl extract_data_pileup.pl -p file_sorted.pileup -o ./</code></p>
-<p>The algorithm will produce a table, named data_from_pileup.tsv. The table is then simplified to retain only the chrosomosomes, the genomic positions and the major bases (that we named here simplified_data.tsv), using the <i>cut</i> function in Linux. Importantly, we used the IUPAC code to produce the major allele, so other letters than A, T, G and C may appear as the result of mixed alleles.</p>
- <p><code>cut data_from_pileup.tsv -f 1,2,8 > simplified_data.tsv</code></p>
- <p>where data_from_pileup.tsv is the file previously produced, and the <code>-f</code> option allows to retain columns 1, 2 and 8 of the file.</p>
+ <h3>Check if a dataset positively correlates with epidemiological data</h3>
+ <p>Before performing phylodynamics analysis, it is essential to confirm that the dataset is posively correlated with epidemiological data. In this work, we used the number of SARS-CoV-2-related deaths for each country. Epidemiological data for each country or French regions are provided in the Data/ repository. To perform the correlation, we developped R scripts, named <i><b>dataset_correlation_World.R</b></i>, <i><b>dataset_correlation_Europe.R</b></i> and <i><b>dataset_correlation_France.R</b></i> that first compare the cumulative number of deaths and sequences at the end of the time period studied, then directly compare per week the number of deaths and sequences included.
+</p>
  <br>
  <h3>4. Producing the .fasta sequence</h3>
  <p>From the simplified simplified_data.tsv table, we then just concatenated positions to form a fasta sequence. At the end of the program, the total length of the sequence and the number of lacking positions and nucleotides are indicated.</p>
