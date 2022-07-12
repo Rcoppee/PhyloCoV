@@ -1,11 +1,13 @@
 # Scripts used for the study "Phylodynamic of SARS-CoV-2 transmission in France at local and international scales during 2020"
 <p>xxx<br>
  xxx</p> <br>
-<h3>1. Prerequisites</h3>
+<h3>Prerequisites</h3>
  <p>To use these scripts, you need the following programs:</p>
- <p>- TreeTime<br>
- - R<br>
- - R packages</p>
+ <p>
+ - ANTOINE TO ADD (Mafft, etc.) <br>
+ - TreeTime version 0.8.5 <br>
+ - R version X.X<br>
+ - List of R packages: adephylo, tidyverse, lubridate, glue, ape, phytools, tidytree, ggplot2, treeio, data.table, dplyr, ggtree, zoo</p>
  <br>
  <h3>Dataset generation (ANTOINE)</h3>
  <p>xxx</p>
