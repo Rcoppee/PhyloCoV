@@ -6,6 +6,7 @@
  <p>- TreeTime<br>
  - R<br>
  - R packages</p>
+ <br>
  <h3>Dataset generation (ANTOINE)</h3>
  <p>xxx</p>
  <br>
@@ -16,10 +17,8 @@
  <p>Before performing phylodynamics analysis, it is essential to confirm that the dataset is posively correlated with epidemiological data. In this work, we used the number of SARS-CoV-2-related deaths for each country. Epidemiological data for each country or French regions are provided in the Data/ repository. To perform the correlation, we developped R scripts, named <i><b>dataset_correlation_World.R</b></i>, <i><b>dataset_correlation_Europe.R</b></i> and <i><b>dataset_correlation_France.R</b></i> that first compare the cumulative number of deaths and sequences at the end of the time period studied, then directly compare per week the number of deaths and sequences included.
 </p>
  <br>
- <h3>4. Producing the .fasta sequence</h3>
- <p>From the simplified simplified_data.tsv table, we then just concatenated positions to form a fasta sequence. At the end of the program, the total length of the sequence and the number of lacking positions and nucleotides are indicated.</p>
-  <p><code>python3 extract_fasta_pileup.py -f simplified_data.tsv -o out.fasta</code></p>
-  <p>where <code>-f</code> is the input file (simplified_data.tsv) and <code>-o</code> corresponds to the output fasta file (out.fasta).</p>
+ <h3>Count the number of distinct sequences across the replicates</h3>
+ <p>Assuming we focus on one time period and one geographic scale (for example, worldwide scale, first half of 2020), we developed a short R script, named <i><b>count_distinct_sequences_in_set.R</b></i> that count the number of unique identifiers across the replicates. A sequence that appeared multiple times across the replicates is counted once.</p>
   <br>
  <h3>5. Citation</h3>
  <p>If you use this pipeline for your own work, please cite:</p>
