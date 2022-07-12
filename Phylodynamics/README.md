@@ -21,7 +21,3 @@
   <br>
          <h3>Visualization of inter- and intra-transmissions</h3>
  <p>Once transmission events are calculated, they are merged across the replicates. We then just realize some plots to study the transmission variations across the replicates, the number of intra- and inter-territory transmission events for each location, or even the date of inter-transmissions originating from a specific location. All theses plots can be generated using the following R scripts, depending on the time period and geographic scale investigated: first time period (January to mid-July 2020): <i><b>analysis_01-to-07_World.R</b></i>, <i><b>analysis_01-to-07_Europe.R</b></i> and <i><b>analysis_01-to-07_France.R</b></i>; second time period (end-July to December 2020): <i><b>analysis_07-to-12_World.R</b></i>, <i><b>analysis_07-to-12_Europe.R</b></i> and <i><b>analysis_07-to-12_France.R</b></i>.</p>
-  <br>
- <h3>Citation</h3>
- <p>If you use or adapt some scripts for your own work, please cite:</p>
- <p><i>In preparation.</i></p>
