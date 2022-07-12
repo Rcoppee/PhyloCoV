@@ -13,3 +13,6 @@
  - R version X.X<br>
  - List of R packages: adephylo, tidyverse, lubridate, glue, ape, phytools, tidytree, ggplot2, treeio, data.table, dplyr, ggtree, zoo</p>
  <br>
+ <h3>Citation</h3>
+ <p>If you use or adapt some scripts for your own work, please cite:</p>
+ <p><i>In preparation.</i></p>
