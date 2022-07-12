@@ -1,6 +1,10 @@
 # Scripts used for the study "Phylodynamic of SARS-CoV-2 transmission in France at local and international scales during 2020"
 <p>This repository contains all the scripts that were develop to produce the work "Scripts used for the study "Phylodynamic of SARS-CoV-2 transmission in France at local and international scales during 2020". You can contact the author if you need some helps to use the scripts for your own projects.<br>
- Metadata consisted, for each GISAID identifier, of the date, the continent, the country and, in the case of French samples, the French administrative region. Since the size of the file is large, you can contact the authors to obtain it. In the Data/ subdirectory, you will find the epidemiological data (i.e., the daily and weekly number of SARS-CoV-2-related deaths) per country and French administrative regions .</p> <br>
+ Metadata consisted, for each GISAID identifier, of the date, the continent, the country and, in the case of French samples, the French administrative region. Since the size of the file is large, you can contact the authors to obtain it. In the Data/ subdirectory, you will find the epidemiological data (i.e., the daily and weekly number of SARS-CoV-2-related deaths) per country and French administrative regions .</p>
+ <br>
+ <p>All the scripts to generate the datasets can be found in the subdirectory <b>Dataset_generation</b>.</p>
+ <p>All the scripts from dating the phylogenetic trees to visualization of transmission events can be found in the subdirectory <b>Phylodynamics</b></p>
+ <br>
 <h3>Prerequisites</h3>
  <p>To use these scripts, you need the following programs:</p>
  <p>
