@@ -1,6 +1,6 @@
 # Scripts used for the study "Phylodynamic of SARS-CoV-2 transmission in France at local and international scales during 2020"
-<p>xxx<br>
- xxx</p> <br>
+<p>This repository contains all the scripts that were develop to produce the work "Scripts used for the study "Phylodynamic of SARS-CoV-2 transmission in France at local and international scales during 2020". You can contact the author if you need some helps to use the scripts for your own projects.<br>
+ Metadata consisted, for each GISAID identifier, of the date, the continent, the country and, in the case of French samples, the French administrative region. They are given in the Data/ subdirectory, alongside with epidemiological data per country and French administrative regions.</p> <br>
 <h3>Prerequisites</h3>
  <p>To use these scripts, you need the following programs:</p>
  <p>
