@@ -3,7 +3,7 @@
  Large metadata can be shared on demand. In the Data/ subdirectory, you will find the epidemiological data (i.e., the daily and weekly number of SARS-CoV-2-related deaths) per country and French administrative regions .</p>
  <br>
  <p>All the scripts to generate the datasets can be found in the subdirectory <b>Dataset_generation</b>.</p>
- <p>All the scripts from dating the phylogenetic trees to visualization of transmission events can be found in the subdirectory <b>Phylodynamics</b></p>
+ <p>All the scripts from dating the phylogenetic trees to visualization of transmission events can be found in the subdirectory <b>Phylodynamics.</b></p>
  <br>
 <h3>Prerequisites</h3>
  <p>To use these scripts, you need the following programs:</p>
