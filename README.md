@@ -2,15 +2,16 @@
 <p>xxx<br>
  xxx</p> <br>
 <h3>1. Prerequisites</h3>
- <p>To use this pipeline, you need the following programs:</p>
- <p>- Perl 5<br>
- - Python 3.x<br>
- - Samtools 1.4</p>
+ <p>To use these scripts, you need the following programs:</p>
+ <p>- TreeTime<br>
+ - xxx<br>
+ - xxx</p>
+ <h3>Dataset generation (ANTOINE)</h3>
+ <p>xxx</p>
+ <p>xxx</p>
  <br>
- <h3>2. Preparing a pileup file</h3>
- <p> The first step consists in the production of a pileup file using Samtools <i>mpileup</i> that calculates for each position across the genome the depth coverage, the quality and content of the reads:</p>
- <p><code> samtools mpileup -a -f reference_genome.fasta file_sorted.bam > file_sorted.pileup</code></p>
- <p>where reference_genome.fasta is the genome of interest in .fasta format (provided with the parameter <code>-f</code>, and file_sorted.bam is the sorted bam file previously produced with samtools <i> sort</i> function. The <code>-a</code> parameter allows to consider positions that were not covered.</p>
+ <h3>Dating the trees using TreeTime</h3>
+ <p> We used TreeTime to date each phylogenetic tree previously produced. TreeTime requires a phylogenetic tree (newick format), a multiple sequence alignment and text file that indicates the date of sample collection for each tip in the phylogeny. Prior to TreeTime, we developed a R script, named <i>get_dates_from_tips.R</i> that produces such a file (one output per replicate). Then, we produced a shell script, named <i>launch_treetime.sh</i> that allows to date all the trees in a dataset. For each replicate, one repository is created containing some files, including the dated trees named <i>X_tree_dated.nexus</i> where <i>X</i> is the number of the replicate. </p>
  <br>
  <h3>3. Generating a table of A, T, G, C and indels content</h3>
  <p>The second step allows to formate a table that indicate the number of A, T, G, C and indels for each position of the genome. For that, we developed a perl script, named extract_data_pileup.pl, that takes the previously produced pileup file as an input (option <code>-p</code>).</p>
