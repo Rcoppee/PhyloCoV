@@ -20,6 +20,15 @@
  <h3>Count the number of distinct sequences across the replicates</h3>
  <p>Assuming we focus on one time period and one geographic scale (for example, worldwide scale, first half of 2020), we developed a short R script, named <i><b>count_distinct_sequences_in_set.R</b></i> that count the number of unique identifiers across the replicates. A sequence that appeared multiple times across the replicates is counted once.</p>
   <br>
+   <h3>Compare the genetic distances between locations</h3>
+ <p>Although optional, we developped R scripts, named <i><b>genetic_distances_World.R</b></i>, <i><b>genetic_distances_Europe.R</b></i> and <i><b>genetic_distances_France.R</b></i> to check whether some locations were associated with higher or lower genetic distances across the phylogenetic trees. Since we perform pairwise comparison of all tips of a same location, it is possible to perform the analysis only on a few replicates. As previously reported in some papers, we observed that all locations have almost systematically similar genetic distances.</p>
+  <br>
+     <h3>Calculating transmission events (Phylodynamic analysis)</h3>
+ <p>This step allows to calculate both inter- and intra-territory transmission events across the replicates for a given time period and geographic scale. This step can be done using the R scripts <i><b>calcul_transmission_World.R</b></i>, <i><b>calcul_transmission_Europe.R</b></i> and <i><b>calcul_transmission_France.R</b></i>. To calculate transmissions, we first determine ancestral state at nodes using the ace function of the R ape package. We recommand the use of SYM or ER models, since the ARD model leads to some problems, possibly because of the outliers. From the ancestral reconstruction, we checked for each node of the phylogenetic tree whether children nodes corresponded to the same geographic region as the current node. If they correspond to different geographic locations, we then assumed the transmission from the parent node-state to the given child node-state (inter-territory transmission). The midpoint of the parent-child branch was chosen as the date of transmission in all cases.</p>
+  <br>
+       <h3>Check if intra-territory transmissions correlates with epidemiological data</h3>
+ <p>To confirm that ancestral state reconstruction using the ace function of ape is efficient, we used the number of intra-territory transmission events as a proxy of the number of SARS-CoV-2-related deaths. XXXXXXXXXX</p>
+  <br>
  <h3>5. Citation</h3>
  <p>If you use this pipeline for your own work, please cite:</p>
  <p><i>In preparation.</i></p>
