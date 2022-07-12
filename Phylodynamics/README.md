@@ -1,5 +1,5 @@
 # From dating the phylogenetic trees to visualizing transmission events
-<br>Metadata can be shared on demand. They consist, for each GISAID identifier, of the date, the continent, the country and, in the case of French samples, the French administrative region.<br>
+<p>Metadata can be shared on demand. They consist, for each GISAID identifier, of the date, the continent, the country and, in the case of French samples, the French administrative region.</p><br>
  <h3>Dating the phylogenetic trees using TreeTime</h3>
  <p> We used TreeTime to date each phylogenetic tree previously produced. TreeTime requires a phylogenetic tree (newick format), a multiple sequence alignment and text file that indicates the date of sample collection for each tip in the phylogeny. Prior to TreeTime, we developed a R script, named <i><b>get_dates_from_tips.R</b></i> that produces such a file (one output per replicate with the <i>name X_date.txt</i>, where <i>X</i> is the number of the replicate). Then, we produced a shell script, named <i><b>launch_treetime.sh</b></i> that allows to date all the trees in a dataset. For each replicate, one repository is created containing some files, including the dated trees named <i>X_tree_dated.nexus</i> where <i>X</i> is the number of the replicate. </p>
  <br>
