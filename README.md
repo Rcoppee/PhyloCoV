@@ -10,8 +10,8 @@
  <p>
  - ANTOINE TO ADD (Mafft, etc.) <br>
  - TreeTime version 0.8.5 <br>
- - R version X.X<br>
- - List of R packages: adephylo, tidyverse, lubridate, glue, ape, phytools, tidytree, ggplot2, treeio, data.table, dplyr, ggtree, zoo</p>
+ - R version 4.0.4<br>
+ - List of R packages: adephylo, tidyverse, lubridate, glue, ape, phytools, tidytree, ggplot2, treeio, data.table, dplyr, ggtree, zoo, ggpubr</p>
  <br>
  <h3>Citation</h3>
  <p>If you use or adapt some scripts for your own work, please cite:</p>
