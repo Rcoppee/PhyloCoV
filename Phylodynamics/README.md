@@ -5,7 +5,7 @@
 </p>
  <br>
  <h3>Count the number of distinct sequences across the replicates</h3>
- <p>Assuming we focus on one time period and one geographic scale (for example, worldwide scale, first half of 2020), we developed a short R script, named <i><b>count_distinct_sequences_in_set.R</b></i> that count the number of unique identifiers across the subsamples. A sequence that appeared multiple times across the subsamples is counted once.</p>
+ <p>Assuming we focus on one time period and one geographic scale (for example, worldwide scale, first half of 2020), we developed a short R script, named <i><b>count_distinct_sequences.R</b></i> that count the number of unique identifiers across the subsamples. A sequence that appeared multiple times across the subsamples is counted once.</p>
   <br>
    <h3>Compare the genetic distances between locations</h3>
  <p>Although optional, we developped R scripts, named <i><b>genetic_distances_World.R</b></i>, <i><b>genetic_distances_Europe.R</b></i> and <i><b>genetic_distances_France.R</b></i> to check whether some locations were associated with higher or lower genetic distances (based on SARS-CoV-2 sequences) across the phylogenetic trees. Since the procedure is time-consuming, we recommand to perform the analysis only on a few subsamples. As previously reported in some papers, we observed that all locations have almost systematically similar genetic distances.</p>
