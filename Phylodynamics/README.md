@@ -1,4 +1,4 @@
-# From dating the phylogenetic trees to visualizing transmission events
+# From the dated phylogenetic trees to the visualisation of exchange events
 <p>Metadata can be shared on demand. They consist, for each GISAID identifier, of the date, the pango lineage, the continent, the country and, in the case of French samples, the French administrative region.</p><br>
  <h3>Check if a dataset positively correlates with epidemiological data</h3>
  <p>Before performing phylodynamics analysis, it is essential to confirm that a subsample is posively correlated with epidemiological data. In this work, we used the number of SARS-CoV-2-related deaths for each country (or French region). Epidemiological data for each country or French regions are provided in the Data/ repository. To perform the correlation, we developped R scripts, named <i><b>dataset_correlation_World.R</b></i>, <i><b>dataset_correlation_Europe.R</b></i> and <i><b>dataset_correlation_France.R</b></i> that first compare the cumulative number of deaths and sequences at the end of the time period studied, then directly compare per week the number of deaths and sequences included.
