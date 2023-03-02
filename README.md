@@ -8,7 +8,6 @@
 <h3>Prerequisites</h3>
  <p>To use these scripts, you need the following programs:</p>
  <p>
- - ANTOINE TO ADD (Mafft, etc.) <br>
  - R version 4.0.4<br>
  - List of R packages: adephylo, tidyverse, lubridate, glue, ape, phytools, tidytree, ggplot2, treeio, data.table, dplyr, ggtree, zoo, ggpubr</p>
  <br>
