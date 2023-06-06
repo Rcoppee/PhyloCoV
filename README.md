@@ -14,4 +14,5 @@
  <br>
  <h3>Citation</h3>
  <p>If you use or adapt some scripts for your own work, please cite:</p>
- <p><i>In preparation.</i></p>
+ <p><b>Coppée et al. (2023): Phylodynamics of SARS-CoV-2 in France, Europe, and the world in 2020</b><br>
+https://elifesciences.org/articles/82538</p>
